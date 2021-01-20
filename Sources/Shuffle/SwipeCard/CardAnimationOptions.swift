@@ -41,7 +41,7 @@ public final class CardAnimationOptions: CardAnimatableOptions {
   /// The static default instance of `CardAnimationOptions`.
   public static let `default`: CardAnimationOptions = CardAnimationOptions()
 
-  public let swipeMotionAxis: Axis = .all
+  public let swipeMotionAxis: Axis
 
   /// The maximum rotation angle of the card, measured in radians.
   ///
