@@ -32,6 +32,7 @@ public protocol CardAnimatableOptions {
   var totalResetDuration: TimeInterval { get }
   var totalReverseSwipeDuration: TimeInterval { get }
   var totalSwipeDuration: TimeInterval { get }
+  var swipeMotionAxis: Axis { get }
 }
 
 /// The animation options provided to the internal card animator.
@@ -39,6 +40,8 @@ public final class CardAnimationOptions: CardAnimatableOptions {
 
   /// The static default instance of `CardAnimationOptions`.
   public static let `default`: CardAnimationOptions = CardAnimationOptions()
+
+  public let swipeMotionAxis: Axis = .all
 
   /// The maximum rotation angle of the card, measured in radians.
   ///

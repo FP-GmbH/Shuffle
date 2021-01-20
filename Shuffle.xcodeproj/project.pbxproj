@@ -93,6 +93,7 @@
 		ADFAAC0A23FA66540084323B /* CardStackStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAAC0923FA66540084323B /* CardStackStateManager.swift */; };
 		ADFAAC0C23FB75D30084323B /* MockCardStackStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAAC0B23FB75D30084323B /* MockCardStackStateManager.swift */; };
 		ADFDBA0524B9B94C0069E256 /* SwipeCardStackSpec_StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFDBA0424B9B94C0069E256 /* SwipeCardStackSpec_StateManager.swift */; };
+		DC448EBC25B81A7C006C8E2F /* SwipeAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC448EBB25B81A7C006C8E2F /* SwipeAxis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +209,7 @@
 		ADFAAC0B23FB75D30084323B /* MockCardStackStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCardStackStateManager.swift; sourceTree = "<group>"; };
 		ADFDBA0424B9B94C0069E256 /* SwipeCardStackSpec_StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardStackSpec_StateManager.swift; sourceTree = "<group>"; };
 		CF2ADEA1F05DDE3996336C1F /* Pods-ShuffleExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuffleExample.release.xcconfig"; path = "Target Support Files/Pods-ShuffleExample/Pods-ShuffleExample.release.xcconfig"; sourceTree = "<group>"; };
+		DC448EBB25B81A7C006C8E2F /* SwipeAxis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAxis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,6 +326,7 @@
 		AD18F0DE22B9F874007BACE9 /* Shuffle */ = {
 			isa = PBXGroup;
 			children = (
+				DC448EBB25B81A7C006C8E2F /* SwipeAxis.swift */,
 				AD72AC6F2270E6380083E735 /* SwipeDirection.swift */,
 				AD10982222879C42008CB197 /* SwipeCard */,
 				ADA444D522AC651B00AFAFFE /* SwipeCardStack */,
@@ -826,6 +829,7 @@
 				AD2E1C91245E184D00A520A3 /* TapGestureRecognizer.swift in Sources */,
 				AD4AACA3231C61FC008EC632 /* UIView+Extensions.swift in Sources */,
 				ADA444D422AC651600AFAFFE /* SwipeCardStack.swift in Sources */,
+				DC448EBC25B81A7C006C8E2F /* SwipeAxis.swift in Sources */,
 				ADDF5F842277FA2C00274C09 /* CGPoint+Extensions.swift in Sources */,
 				ADA444DF22AC682400AFAFFE /* CardStackLayoutProvider.swift in Sources */,
 				AD10983422879ED6008CB197 /* SwipeCardDelegate.swift in Sources */,
