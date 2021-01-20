@@ -32,6 +32,7 @@ public protocol CardAnimatableOptions {
   var totalResetDuration: TimeInterval { get }
   var totalReverseSwipeDuration: TimeInterval { get }
   var totalSwipeDuration: TimeInterval { get }
+  var swipeMotionAxis: Axis { get }
 }
 
 /// The animation options provided to the internal card animator.
@@ -39,6 +40,8 @@ public final class CardAnimationOptions: CardAnimatableOptions {
 
   /// The static default instance of `CardAnimationOptions`.
   public static let `default`: CardAnimationOptions = CardAnimationOptions()
+
+  public let swipeMotionAxis: Axis
 
   /// The maximum rotation angle of the card, measured in radians.
   ///
@@ -84,7 +87,9 @@ public final class CardAnimationOptions: CardAnimatableOptions {
               resetSpringDamping: CGFloat = 0.5,
               totalResetDuration: TimeInterval = 0.6,
               totalReverseSwipeDuration: TimeInterval = 0.25,
-              totalSwipeDuration: TimeInterval = 0.7) {
+              totalSwipeDuration: TimeInterval = 0.7,
+              swipeMotionAxis: Axis = .all) {
+
     self.maximumRotationAngle = max(-.pi / 2, min(maximumRotationAngle, .pi / 2))
     self.relativeReverseSwipeOverlayFadeDuration = max(0, min(relativeReverseSwipeOverlayFadeDuration, 1))
     self.relativeSwipeOverlayFadeDuration = max(0, min(relativeSwipeOverlayFadeDuration, 1))
@@ -92,5 +97,6 @@ public final class CardAnimationOptions: CardAnimatableOptions {
     self.totalResetDuration = max(0, totalResetDuration)
     self.totalReverseSwipeDuration = max(0, totalReverseSwipeDuration)
     self.totalSwipeDuration = max(0, totalSwipeDuration)
+    self.swipeMotionAxis = swipeMotionAxis
   }
 }
