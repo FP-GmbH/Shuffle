@@ -87,7 +87,9 @@ public final class CardAnimationOptions: CardAnimatableOptions {
               resetSpringDamping: CGFloat = 0.5,
               totalResetDuration: TimeInterval = 0.6,
               totalReverseSwipeDuration: TimeInterval = 0.25,
-              totalSwipeDuration: TimeInterval = 0.7) {
+              totalSwipeDuration: TimeInterval = 0.7,
+              swipeMotionAxis: Axis = .all) {
+
     self.maximumRotationAngle = max(-.pi / 2, min(maximumRotationAngle, .pi / 2))
     self.relativeReverseSwipeOverlayFadeDuration = max(0, min(relativeReverseSwipeOverlayFadeDuration, 1))
     self.relativeSwipeOverlayFadeDuration = max(0, min(relativeSwipeOverlayFadeDuration, 1))
@@ -95,5 +97,6 @@ public final class CardAnimationOptions: CardAnimatableOptions {
     self.totalResetDuration = max(0, totalResetDuration)
     self.totalReverseSwipeDuration = max(0, totalReverseSwipeDuration)
     self.totalSwipeDuration = max(0, totalSwipeDuration)
+    self.swipeMotionAxis = swipeMotionAxis
   }
 }
