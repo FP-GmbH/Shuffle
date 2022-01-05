@@ -14,7 +14,7 @@ let package = Package(
       targets: ["Shuffle"])
   ],
   dependencies: [
-    .package(url: "https://github.com/Quick/Quick", from: "3.1.2"),
+    .package(url: "https://github.com/Quick/Quick", from: "4.0.0"),
     .package(url: "https://github.com/Quick/Nimble", from: "9.0.1")
   ],
   targets: [
