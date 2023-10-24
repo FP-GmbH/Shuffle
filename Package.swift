@@ -13,21 +13,10 @@ let package = Package(
       name: "Shuffle",
       targets: ["Shuffle"])
   ],
-  dependencies: [
-    .package(url: "https://github.com/Quick/Quick", from: "4.0.0"),
-    .package(url: "https://github.com/Quick/Nimble", from: "9.0.1")
-  ],
+  dependencies: [],
   targets: [
     .target(
       name: "Shuffle",
-      dependencies: []),
-    .testTarget(
-      name: "ShuffleTests",
-      dependencies: [
-        "Shuffle",
-        "Quick",
-        "Nimble"
-      ]
-    )
+      dependencies: [])
   ]
 )
