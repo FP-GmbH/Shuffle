@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -21,7 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		387D5E42FEF4A017C5407B1F /* Pods_ShuffleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD73382D22D7142EE1082545 /* Pods_ShuffleTests.framework */; };
+		1FA0C7822AE7FF7C00F30A68 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 1FA0C7812AE7FF7C00F30A68 /* Quick */; };
+		1FA0C7852AE7FF8E00F30A68 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 1FA0C7842AE7FF8E00F30A68 /* Nimble */; };
 		881FD28C231B78FB003ACA43 /* CardStackAnimationOptionsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881FD28B231B78FB003ACA43 /* CardStackAnimationOptionsSpec.swift */; };
 		904ADE5B4A83DD023287EB73 /* Pods_ShuffleExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AB74E2E12D2E4C970B6743 /* Pods_ShuffleExample.framework */; };
 		AD0542C02271397900B42353 /* Shuffle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD72AC5D2270E5E20083E735 /* Shuffle.framework */; };
@@ -97,6 +98,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1FA0C7862AE8001700F30A68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD72AC542270E5E20083E735 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD72AC7A2270FB650083E735;
+			remoteInfo = ShuffleExample;
+		};
 		AD0542C12271397900B42353 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AD72AC542270E5E20083E735 /* Project object */;
@@ -128,8 +136,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1070E8CB25529479CB067AD3 /* Pods-ShuffleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuffleTests.release.xcconfig"; path = "Target Support Files/Pods-ShuffleTests/Pods-ShuffleTests.release.xcconfig"; sourceTree = "<group>"; };
-		29C7C2F3D3AC996FDD3FFF70 /* Pods-ShuffleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuffleTests.debug.xcconfig"; path = "Target Support Files/Pods-ShuffleTests/Pods-ShuffleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		604684987DE74002FE435206 /* Pods-ShuffleExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuffleExample.debug.xcconfig"; path = "Target Support Files/Pods-ShuffleExample/Pods-ShuffleExample.debug.xcconfig"; sourceTree = "<group>"; };
 		881FD28B231B78FB003ACA43 /* CardStackAnimationOptionsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackAnimationOptionsSpec.swift; sourceTree = "<group>"; };
 		91AB74E2E12D2E4C970B6743 /* Pods_ShuffleExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShuffleExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,7 +187,6 @@
 		AD72AC842270FB650083E735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD72AC872270FB650083E735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD72AC892270FB650083E735 /* ShuffleExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ShuffleExample.plist; sourceTree = "<group>"; };
-		AD73382D22D7142EE1082545 /* Pods_ShuffleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShuffleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD96BCCF236533CA003B5963 /* Shuffle-iOS.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Shuffle-iOS.podspec"; sourceTree = "<group>"; };
 		AD9F44BB2468D04600725A8D /* SwipeCardStackSpec_MainMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardStackSpec_MainMethods.swift; sourceTree = "<group>"; };
 		AD9F44BD2468D08B00725A8D /* SwipeCardStackSpec_SwipeCardDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardStackSpec_SwipeCardDelegate.swift; sourceTree = "<group>"; };
@@ -217,8 +222,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA0C7822AE7FF7C00F30A68 /* Quick in Frameworks */,
+				1FA0C7852AE7FF8E00F30A68 /* Nimble in Frameworks */,
 				AD0542C02271397900B42353 /* Shuffle.framework in Frameworks */,
-				387D5E42FEF4A017C5407B1F /* Pods_ShuffleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,8 +252,6 @@
 			children = (
 				604684987DE74002FE435206 /* Pods-ShuffleExample.debug.xcconfig */,
 				CF2ADEA1F05DDE3996336C1F /* Pods-ShuffleExample.release.xcconfig */,
-				29C7C2F3D3AC996FDD3FFF70 /* Pods-ShuffleTests.debug.xcconfig */,
-				1070E8CB25529479CB067AD3 /* Pods-ShuffleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -533,7 +537,6 @@
 			isa = PBXGroup;
 			children = (
 				91AB74E2E12D2E4C970B6743 /* Pods_ShuffleExample.framework */,
-				AD73382D22D7142EE1082545 /* Pods_ShuffleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -556,18 +559,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD0542C32271397900B42353 /* Build configuration list for PBXNativeTarget "ShuffleTests" */;
 			buildPhases = (
-				FDF6F17D79CA361B820D81EA /* [CP] Check Pods Manifest.lock */,
 				AD0542B72271397900B42353 /* Sources */,
 				AD0542B82271397900B42353 /* Frameworks */,
 				AD0542B92271397900B42353 /* Resources */,
-				C92CF9AAE83E6BBCCA11DD30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				AD0542C22271397900B42353 /* PBXTargetDependency */,
+				1FA0C7872AE8001700F30A68 /* PBXTargetDependency */,
 			);
 			name = ShuffleTests;
+			packageProductDependencies = (
+				1FA0C7812AE7FF7C00F30A68 /* Quick */,
+				1FA0C7842AE7FF8E00F30A68 /* Nimble */,
+			);
 			productName = ShuffleTests;
 			productReference = AD0542BB2271397900B42353 /* ShuffleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -645,6 +651,10 @@
 				Base,
 			);
 			mainGroup = AD72AC532270E5E20083E735;
+			packageReferences = (
+				1FA0C7802AE7FF7C00F30A68 /* XCRemoteSwiftPackageReference "Quick" */,
+				1FA0C7832AE7FF8E00F30A68 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = AD72AC5E2270E5E20083E735 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -724,23 +734,6 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		C92CF9AAE83E6BBCCA11DD30 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ShuffleTests/Pods-ShuffleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ShuffleTests/Pods-ShuffleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShuffleTests/Pods-ShuffleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F1205372FA02BB20747E81FA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -756,28 +749,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShuffleExample/Pods-ShuffleExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FDF6F17D79CA361B820D81EA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ShuffleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -872,6 +843,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1FA0C7872AE8001700F30A68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD72AC7A2270FB650083E735 /* ShuffleExample */;
+			targetProxy = 1FA0C7862AE8001700F30A68 /* PBXContainerItemProxy */;
+		};
 		AD0542C22271397900B42353 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AD72AC5C2270E5E20083E735 /* Shuffle */;
@@ -898,7 +874,6 @@
 /* Begin XCBuildConfiguration section */
 		AD0542C42271397900B42353 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29C7C2F3D3AC996FDD3FFF70 /* Pods-ShuffleTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
@@ -920,7 +895,6 @@
 		};
 		AD0542C52271397900B42353 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1070E8CB25529479CB067AD3 /* Pods-ShuffleTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
@@ -1242,6 +1216,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1FA0C7802AE7FF7C00F30A68 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.0;
+			};
+		};
+		1FA0C7832AE7FF8E00F30A68 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1FA0C7812AE7FF7C00F30A68 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FA0C7802AE7FF7C00F30A68 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		1FA0C7842AE7FF8E00F30A68 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FA0C7832AE7FF8E00F30A68 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD72AC542270E5E20083E735 /* Project object */;
 }
